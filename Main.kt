@@ -53,4 +53,45 @@ fun main(args: Array<String>) {
     }else{
         println("То же не сработает")
     }
+    //bool
+    if(bt){
+        println("Это сработает потому что bt = $bt")
+    }else{
+        println("Это не сработает")
+    }
+    //or
+    if(bf || i==4){
+        println("Полюбому сработает($i)")
+    }else{
+        println("Не сработает")
+    }
+    //and not
+    if(bt && v!=0){
+        println("Это работает!!!")
+    }else{
+        println("Это не работает :(")
+    }
+
+    //when
+    when(i){
+        0 -> println("Zero")
+        1 -> println("One")
+        2 -> println("Two")
+        3 -> println("Three")
+        4 -> println("Four")
+        else -> println("Не чего не понимаею")
+    }
+
+    //Присвоение значений условных операторов
+    var jim = if(i==90) 5 else "Jimmy is a good boy"
+    println(jim)
+
+    val bill = when(i){
+        1 -> "Jimmy is a good boy"
+        2 -> "Tommy is a good boy"
+        3 -> "Bobby is a good boy"
+        4 -> "Billy is a good boy"
+        else -> "no good boys is here"
+    }
+    println(bill)
 }
